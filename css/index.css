@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    font-family: "cwTeXYen", sans-serif;
+    margin: 0;
+    background-color: black;
+}
+
+#mainarea {
+    background-color: black;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 10%;
+
+}
+
+#rightarea {
+    background-color: lightgray;
+    width: 10%;
+    height: 349%;
+    position: absolute;
+    left: 90%;
+}
+
+#leftarea {
+    background-color: lightgray;
+    width: 10%;
+    height: 349%;
+    position: absolute;
+}
+
+#titleset {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    color: aliceblue ; 
+    font-size: 50px;
+    text-align: center;
+    padding-top: 1% ; 
+    font-family: 'Permanent Marker', cursive;
+}
+
+nav > ul {
+    background-color: whitesmoke;
+    list-style: none;
+    /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+     
+}
+
+nav a {
+    color: inherit;
+    /* 移除超連結顏色 */
+    display: block;
+    /* 讓 <a> 填滿 <li> */
+    font-size: 2.5rem;
+    
+    text-decoration: none;
+    /* 移除超連結底線 */
+}
+
+
+nav a:hover {
+    background-color: rgb(115, 115, 115);
+    /* 滑鼠移到 <a> 時變成深底淺色 */
+    color: white;
+
+}
+
+div.bannerimg {
+    width: 100%;
+    height: 50%;
+}
+
+div.contenter {
+    width: 100%;
+    height: 280%;
+    background-color: black;
+
+}
+
+div.section { 
+    width: 70%;
+    float: left;
+    height: 100%;
+    background-color: black;
+}
+
+div.aside {
+    width: 30% ;
+    float: right ;
+    height: 25% ;
+    background-color: black;
+    position: sticky ; 
+    position: -webkit- sticky ; 
+    top : 2% ; 
+}
+
+div.profile {
+    width: 100%;
+    height: 80%;
+    background-color: black ; 
+
+}
+
+div.profileimg {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    margin-top: 2%;
+}
+
+div.profiletxt {
+    width: 100%;
+    height: 60%;
+    padding: 5%;
+
+}
+
+ul.profile {
+    font-size: 28px;
+    list-style: none;
+    color: aliceblue ; 
+}
+
+div.historytitle {
+    width: 98%;
+    height: 3%;
+    background-color: whitesmoke;
+    font-size: 40px;
+    padding-top: 2%;
+    text-align: center;
+    float: left;
+    color: black;
+    font-weight: bold ; 
+    border: "2" ;
+    margin-top: 1%;
+    margin-left: 1% ; 
+}
+
+div.historycontent {
+    margin-top: 1%;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    float: left;
+    color: aliceblue;
+}
+div.dailyimg {
+    margin-top: 1%;
+    width: 100%;
+    height: 11%;
+    background-color: black;
+    float: left;
+    color: aliceblue;
+}
+
+div.all {
+    column-count: 3;
+    margin-top: 3% ; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    color:aliceblue;
+    
+}
+div.alll{
+    column-count: 2;
+    margin-top: 0% ; 
+    margin-left: 0% ; 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 37px;
+    color:black;
+    
+}
+div.hobbytitle {
+    width: 98%;
+    height: 3%;
+    background-color: whitesmoke;
+    font-size: 40px;
+    padding-top: 2%;
+    text-align: center;
+    float: left;
+    color: black;
+    font-weight: bold ; 
+    border: "2" ;
+    margin-top: 2%;
+    margin-left: 1% ; 
+}
+
+div.hobbycontent {
+    margin-top: 1%;
+    margin-left: 0% ; 
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    float: left;
+    color: aliceblue;
+}
+div.hobbyimg{
+    width: 20% ; 
+    height: 30% ;
+    float: left ; 
+    text-align: center ; 
+    margin-top: 2% ; 
+}
+div.hobbytxt{
+    width: 80% ; 
+    height: 30% ;
+    float: right ; 
+    margin-top: 2% ; 
+}
+a.hobby{
+    font-size: 30px ; 
+    text-align: left ; 
+}
+div.cc{
+    width: 100% ; 
+    height: 3% ; 
+    background-color: black; 
+    z-index: 1 ; 
+    float: left ; 
+}
+div.cctxt{
+    font-size: 32px ; 
+    text-align: center;
+    color: aliceblue;
+    margin-top: 2% ;
+}
+div.ccimg{
+    margin-left: 10%;
+    width: 80% ;
+    text-justify: distribute-all-lines;
+  text-align-last: justify;
+}
+                                /*以下為W3C Flip Card CSS*/
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  color: white;
+    font-size: 10px;
+  transform: rotateY(180deg);
+}
+a.photodiscribe{
+    font-size: 40px ; 
+    text-align: center;
+}
+div.filpboxdiv{
+    height: 100% ; 
+    width: 100% ; 
+    font-size: 40px ; 
+    text-align: center;
+    padding-top: 25% ; 
+}
